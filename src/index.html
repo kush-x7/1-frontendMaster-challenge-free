@@ -9,42 +9,90 @@
     <!-- Linking tailwind style folder -->
     <link rel="stylesheet" href="../dist/output.css" />
 
+    <!-- Linking google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="../images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Single Price Grid Component</title>
+    <title>Single Price Grid Component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
-  <body>
-    Join our community 30-day, hassle-free money back guarantee Gain access to
-    our full library of tutorials along with expert code reviews. Perfect for
-    any developers who are serious about honing their skills. Monthly
-    Subscription &dollar;29 per month Full access for less than &dollar;1 a day
-    Sign Up Why Us Tutorials by industry experts Peer &amp; expert code review
-    Coding exercises Access to our GitHub repos Community forum Flashcard decks
-    New videos every week
 
-    <footer>
-      <p class="">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
+  <body class="font-karla">
+    <div class="m-auto my-5 grid max-w-[18.75rem] grid-cols-1 shadow-2xl">
+      <div class="p-6">
+        <p class="mb-6 text-xl font-bold text-primary-Cyan">
+          Join our community
+        </p>
+        <p class="mb-4 text-[15px] font-bold text-primary-Yellow">
+          30-day, hassle-free money back guarantee
+        </p>
+        <p class="text-sm text-neutral-GrayishBlue">
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </div>
+
+      <div class="bg-primary-Cyan p-6">
+        <h2 class="mb-[18px] text-lg font-bold text-white">
+          Monthly Subscription
+        </h2>
+        <p class="mb-1 flex items-center text-[32px] font-bold text-white">
+          &dollar;29
+          <span
+            class="opacity- ml-3 text-base font-normal text-white opacity-50"
+            >per month</span
+          >
+        </p>
+        <p class="mb-[26px] text-white">Full access for less than $1 a day</p>
+        <button
+          class="rounded-[5px] bg-primary-Yellow px-[96px] pt-[15px] pb-[14px] font-bold text-white shadow-lg"
+        >
+          Sign Up
+        </button>
+      </div>
+
+      <div class="relative bg-primary-Cyan p-6">
+        <div
+          class="absolute bottom-0 left-0 right-0 top-0 bg-white opacity-[0.15]"
+        ></div>
+
+        <h2 class="mb-[18px] text-lg font-bold text-white">Why Us</h2>
+        <p class="text-sm text-white opacity-75">
+          Tutorials by industry experts <br />
+          Peer &amp; expert code review <br />
+          Coding exercises <br />
+          Access to our GitHub repos <br />
+          Community forum <br />Flashcard decks <br />
+          New videos every week
+        </p>
+      </div>
+    </div>
   </body>
 </html>
+<!-- Join our community 30-day, hassle-free money back guarantee Gain access to
+  our full library of tutorials along with expert code reviews. Perfect for
+  any developers who are serious about honing their skills. 
+  
+  
+
+  <footer>
+    <p class="">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
